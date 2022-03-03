@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ControleTelaDeMenu">
+   <content>
+      <VBox prefHeight="216.0" prefWidth="266.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Menu">
+                  <items>
+                    <MenuItem fx:id="menuCadastroCliente" mnemonicParsing="false" onAction="#onMenuClienteAction" text="Cadastrar Cliente" />
+                        <MenuItem fx:id="menuCadastroDeProduto" mnemonicParsing="false" onAction="#onMenuProdutoAction" text="Cadastrar Produto" />
+                        <MenuItem fx:id="menuCadastroDeServico" mnemonicParsing="false" onAction="#onMenuCadastroDeServicoAction" text="Cadastrar Servico" />
+                        <MenuItem fx:id="menuListarCliente" mnemonicParsing="false" onAction="#onMenuListarClienteAction" text="Listar Cliente" />
+                        <MenuItem fx:id="menuListarProduto" mnemonicParsing="false" onAction="#onMenuListarProdutoAction" text="Listar Produto" />
+                        <MenuItem fx:id="menuListarServico" mnemonicParsing="false" onAction="#onMenuListarServico" text="Listar Servico" />
+                        <MenuItem fx:id="menuGmail" mnemonicParsing="false" onAction="#onMenuGmailAction" text="Enviar Email" />
+                        <MenuItem fx:id="menuGerarPDF" mnemonicParsing="false" onAction="#onGerarPDFAction" text="Gerar PDF" />
+                        <MenuItem fx:id="menuAtualizarCliente" mnemonicParsing="false" onAction="#onAtualizarClienteAction" text="Atualizar Cliente" />
+                        <MenuItem fx:id="menuFazerOrcamento" mnemonicParsing="false" onAction="#onFazerOrcamento" text="Fazer Orçamento" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Configurações De Conta">
+                  <items>
+                    <MenuItem fx:id="menuExcluirconta" mnemonicParsing="false" onAction="#onExcluirContaAction" text="Excluir Conta" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

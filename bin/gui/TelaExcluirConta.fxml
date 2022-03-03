@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="192.0" prefWidth="389.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ControleTelaExcluirConta">
+   <children>
+      <Label layoutX="30.0" layoutY="26.0" prefHeight="17.0" prefWidth="35.0" text="Email:" />
+      <Label layoutX="30.0" layoutY="75.0" text="Senha:" />
+      <TextField fx:id="textoCampoEmail" layoutX="83.0" layoutY="22.0" prefHeight="25.0" prefWidth="271.0" />
+      <Button fx:id="buttonExcluir" layoutX="269.0" layoutY="143.0" mnemonicParsing="false" onAction="#onExcluirconta" text="Excluir Conta" />
+      <PasswordField fx:id="textoCampoSenha" layoutX="83.0" layoutY="71.0" prefHeight="25.0" prefWidth="271.0" />
+      <Button fx:id="buttonVoltar" layoutX="30.0" layoutY="143.0" mnemonicParsing="false" onAction="#onButtonVoltar" text="Voltar" />
+   </children>
+</AnchorPane>
